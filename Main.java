@@ -17,7 +17,7 @@ public class Main {
 
         
         while (true) {
-            System.out.println("\nMENU UTAMA:");
+            System.out.println("\nMENU UTAMA RESEVASI ZANOD MINI SOCCER:");
             System.out.println("1. Tambah Reservasi");
             System.out.println("2. Lihat Reservasi");
             System.out.println("3. Ubah Reservasi");
@@ -56,4 +56,5 @@ public class Main {
             }
         }
     }
+
 }
