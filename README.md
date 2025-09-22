@@ -40,8 +40,7 @@ Program menampilkan pesan perpisahan → program berhenti.
 
 Jadi alurnya sederhana: program jalan → tampilkan menu → user pilih → program proses → kembali ke menu, sampai user memilih keluar.
 
-=============================================================================================
-
+===========================================================
 **PENJELASAN KODE PROGRAM**
 
 **1. Class Reservasi.java (Superclass)**
@@ -116,3 +115,147 @@ Jadi alurnya sederhana: program jalan → tampilkan menu → user pilih → prog
   - Object instantiation: Membuat objek service untuk handle business logic
   - Menu loop: while(true) untuk menu yang terus berulang
   - Switch-case: Control flow untuk pilihan menu
+
+===========================================================
+
+**ALUR PROGRAM**
+
+**1. Tambah Reservasi**
+
+<img width="1308" height="610" alt="image" src="https://github.com/user-attachments/assets/3e578bc0-c7f5-47c2-95a4-79f6443ff598" />
+
+Penjelasan Output:
+
+- Menu Utama
+User diberikan pilihan 1–5 (Tambah, Lihat, Ubah, Hapus, Keluar).
+Pada contoh ini, user memilih 1 (Tambah Reservasi).
+
+- Form Input Reservasi
+
+  - Nama Pemesan: janod
+
+  - Tanggal: 22-09-2025
+
+  - Jam Mulai: 23:00
+
+  - Durasi: 3 jam
+
+  - Jenis Reservasi: Reguler (Rp 50.000/jam)
+
+- Informasi Keuntungan
+Karena memilih Reguler, program menampilkan keuntungan reservasi reguler:
+
+  - Harga lebih terjangkau (Rp 50.000/jam)
+
+  - Fasilitas: Lapangan standar & air mineral
+
+  - Cocok untuk bermain santai
+
+- Konfirmasi Reservasi Berhasil
+Program menampilkan detail reservasi:
+
+  - [REGULER] Nama: janod
+
+  - Tanggal: 22-09-2025
+
+  - Jam: 23:00
+
+  - Durasi: 3 jam
+
+  - Total biaya: Rp 150.000
+
+  - Fasilitas: Lapangan standar, Air mineral
+
+
+*Contoh jika mengisi dengan jawaban kosong*
+
+<img width="1593" height="618" alt="image" src="https://github.com/user-attachments/assets/d7f94c1d-2c1b-4f48-92e1-675c57087d52" />
+
+
+**2.Lihat Reservasi**
+<img width="1604" height="372" alt="image" src="https://github.com/user-attachments/assets/16d4ad3d-5fa1-4d6d-b1a5-f364c145e46a" />
+
+Penjelasan Output:
+
+- Menu Utama
+User memilih 2 (Lihat Reservasi).
+
+- Daftar Reservasi
+Program menampilkan semua data reservasi yang sudah tersimpan:
+
+  - Reservasi 1 (Reguler)
+Nama: janod | Tanggal: 22-09-2025 | Jam: 23:00 | Durasi: 3 jam | Total Rp 150.000
+Fasilitas: Lapangan standar, Air mineral
+
+  - Reservasi 2 (VIP)
+Nama: ojan | Tanggal: 23-10-2025 | Jam: 22:00 | Durasi: 2 jam | Total Rp 200.000
+Fasilitas VIP: Lapangan premium, AC, Sound system, Snack & minuman, Handuk
+Biaya tambahan: Rp 50.000
+
+- Statistik Reservasi
+Program otomatis menghitung ringkasan:
+
+  - Total Reservasi: 2
+
+  - Jumlah Reguler: 1
+
+  - Jumlah VIP: 1
+
+  - Total Pendapatan: Rp 350.000
+
+**3.Ubah Reservasi**
+
+<img width="1617" height="699" alt="image" src="https://github.com/user-attachments/assets/899628cc-32f3-4b24-a697-219ed7dd9f58" />
+
+Penjelasan Output:
+
+- Menu Utama
+User memilih 3 (Ubah Reservasi).
+
+- Daftar Reservasi
+Program menampilkan semua data reservasi yang ada (sama seperti menu lihat reservasi), lengkap dengan detail reguler dan VIP, serta statistik total.
+
+- Pilih Data yang Akan Diubah
+
+  - User memilih reservasi nomor 1 (atas nama janod).
+
+  - Program menampilkan data lama untuk memastikan.
+
+- Pilih Bagian yang Ingin Diubah
+Opsi yang tersedia: Nama, Tanggal, Jam, atau Durasi.
+
+  - User memilih 1 (Nama Pemesan).
+
+  - Nama diubah dari janod → ZANOD.
+
+- Konfirmasi Perubahan
+Program menampilkan pesan “Reservasi berhasil diubah!” dan memperlihatkan data terbaru dengan nama pemesan yang sudah diperbarui.
+
+**4.Hapus Reservasi**
+
+<img width="1625" height="500" alt="image" src="https://github.com/user-attachments/assets/d119abaa-48e2-4bdc-a093-b33d8bec2d6b" />
+
+- Penjelasan Output:
+
+- Daftar Reservasi Ditampilkan
+Program menampilkan semua data reservasi yang ada, lengkap dengan detail Reguler dan VIP, serta ringkasan statistik.
+
+- Pilih Reservasi yang Akan Dihapus
+
+  - User memilih nomor 1 (atas nama ZANOD).
+
+- Konfirmasi Hapus
+Program menampilkan pesan “Reservasi berhasil dihapus!” dan menampilkan detail data yang telah dihapus agar user tahu reservasi mana yang dihapus.
+
+**5.Keluar**
+
+<img width="784" height="333" alt="image" src="https://github.com/user-attachments/assets/78ff6197-9167-49b9-b447-d09babd73752" />
+
+
+- Penjelasan Output:
+
+  - Menu Utama
+User memilih opsi 5 (Keluar).
+
+  - Program Selesai
+Program menampilkan pesan “Terima kasih!” sebagai penutup, lalu menghentikan proses.
